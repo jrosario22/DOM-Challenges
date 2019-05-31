@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Argue</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Have You Ever Argued With Yourself?</h1>
+        <p>If you answered no then you must think to yourself much? If you answered yes, then you're not crazy! It is normal is normal to argue with yourself. 
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas corporis enim doloribus, sit sapiente animi corrupti? Et libero cum tenetur culpa quisquam facere eveniet, qui maiores, sit, asperiores sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam quidem ab, unde nihil officia inventore autem quae ad nesciunt in temporibus ipsum, aspernatur doloribus quas quibusdam vitae fugit a?
+        </p>
+    </header>
+    
+    <section>
+        <h2>Below we have a simulation to demonstrate arguing with yourself</h2>
+        <p id="p1">Try Me!</p>
+        <button id="argueButton1" onclick="argue1()">Argue 1</button>
+        <button id="argueButton2" onclick="argue2()">Argue 2</button>
+    </section>
+
+
+</body>
+
+<script>
+    /*
+    let argue1 = () => {
+        document.getElementById("p1").innerText = "I'm right"
+    }
+    */
+
+    let argue1 = () => {
+        document.getElementById("p1").addEventListener("click", function(event) {
+            alert( "I'm Right")
+        });
+
+    let argue2 = () => {
+        document.getElementById("p1").innerText = "No, I'm right!"
+    }
+
+</script>
+
+</html>
