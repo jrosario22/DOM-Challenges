@@ -23,20 +23,39 @@
 </body>
 
 <script>
+    
+    let button1 = document.getElementById("argueButton1");
+    button1.addEventListener("click", () => {
+        document.getElementById("p1").innerText = "I'm right";
+    });
+
+    let button2 = document.getElementById("argueButton2");
+    button2.addEventListener("click", () => {
+        document.getElementById("p1").innerText = "No, I'm right!";
+    });
+
+
     /*
     let argue1 = () => {
         document.getElementById("p1").innerText = "I'm right"
     }
     */
 
+    /*
     let argue1 = () => {
-        document.getElementById("p1").addEventListener("click", function(event) {
-            alert( "I'm Right")
-        });
+        document.getElementById("argueButton1").addEventListener("click", function(argueButton1) {
+            alert("I'm Right")
+        })
+    }    
+    */
 
+    //let button = document.querySelector("button");
+
+    /*
     let argue2 = () => {
         document.getElementById("p1").innerText = "No, I'm right!"
     }
+    */
 
 </script>
 
