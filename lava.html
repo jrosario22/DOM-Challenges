@@ -4,13 +4,46 @@
     <title>Lava</title>
 </head>
 <body>
-    <header id="main-header">
-                <h1>Have You Ever Argued With Yourself?</h1>
-                <p>If you answered no then you must think to yourself much? If you answered yes, then you're not crazy! It is normal is normal to argue with yourself. 
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas corporis enim doloribus, sit sapiente animi corrupti? Et libero cum tenetur culpa quisquam facere eveniet, qui maiores, sit, asperiores sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam quidem ab, unde nihil officia inventore autem quae ad nesciunt in temporibus ipsum, aspernatur doloribus quas quibusdam vitae fugit a?
-                </p>
-            </header>
+
+    <header id="lava-header">
+        <div class="container">
+            <h1>The DOM Challenges</h1>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>                    
+                <li><a href="index.html">Self Arguing</a></li>
+                <li><a href="lava.html">Hot Lava</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="sphere.html">Sphere</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h1>Have You Ever Played The Floor Is Lava?</h1>
+            <p>If you answered no then you've been missing out! If you answered yes, rejoice in the memories of flying from couch to couch!</p>
+        </div>
+    </section>
     
+    <section>
+        <div class="container">
+            <h2>Below we have a simulation to demonstrate arguing with yourself</h2>
+            <text id="p2">Don't hover over me</text>
+        </div>
+    </section>
+
 </body>
+
+<script>
+    //let hoverText = document.querySelector("text");
+    let hoverText = document.getElementById("p2");
+    hoverText.addEventListener("mouseover", ()=> {
+        alert("Hey, I told you not to hover over me!");
+    });
+</script>
+
 </html>
