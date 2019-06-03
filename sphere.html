@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <title>Sphere</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header id="login-header">
+    <header id="main-header">
         <div class="container">
             <h1>The DOM Challenges</h1>
         </div>
@@ -23,11 +24,30 @@
 
     <section>
         <div class="container">
-
+            <p>How much volume in your sphere? Enter the radius below</p>
+            <input id="radius" type="numbers" placeholder="Radius">
+            <input id="button" type="submit" value="Submit">
         </div>
     </section>
+    
+    <footer id="main-footer">
+        <p>Copyright &copy; 2019 Rosario Industries</p>
+    </footer> 
 </body>
+<script>
 
+let radiusFunc = document.getElementById("button");
+radiusFunc.addEventListener("click", () => {
+    var rd = document.getElementById("radius").value;
+    if(isNaN(rd) || rd < 0){ 
+        alert("Please enter a positive integer");
+    } else {
+        var volume = Math.pow(rd, 3)*Math.PI*(4/3);
+        alert(volume);
+    }
+});
+
+</script>
 
 
 </html>
