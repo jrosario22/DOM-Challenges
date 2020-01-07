@@ -10,7 +10,6 @@ function passwordCheckFunc() {
         if(x != 12345678){
             alert("Password entered is incorrect");
         } else if(x == 12345678) {
-            console.log("I ran")
             document.getElementById("header1").innerText = "Successful log in";
         }
 }
